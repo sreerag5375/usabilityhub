@@ -179,13 +179,12 @@
     padding-inline: var(--padding-inline-section);
   }
 
-  .footer-section{
+  .footer-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 40px;
   }
-
 
   .footer-section .link-column {
     align-items: stretch;
@@ -196,5 +195,109 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
+}
 
+/* 
+
+small  mobile screens
+
+*/
+
+@media (max-width: 467px) {
+  /* banner */
+
+  .banner-text {
+    padding: 10px 20px;
+  }
+
+  /* navbar */
+  .main-nav .logo-text {
+    display: none;
+  }
+
+  .company-logo img {
+    width: 190px;
+  }
+
+  .nav-menu .fa-solid,
+  .fas {
+    font-size: 28px;
+  }
+
+  /* hero section */
+
+  .header-section-left h1 {
+    margin-bottom: 4px;
+    font-size: 42px;
+  }
+
+  /* features section */
+  .features-card {
+    max-width: 100%;
+  }
+
+  .features-section .secondary-btn {
+    margin: 8px 0 14px;
+  }
+
+  .features-section {
+    background: none;
+  }
+
+  /* big features section */
+  .big-feature-container {
+    padding: 14px var(--padding-inline-section) 80px;
+  }
+
+  /* example section */
+
+  .examples h2 {
+    text-align: center;
+  }
+  .example-cards {
+    display: block;
+    padding: 8px 0 0;
+  }
+
+  .example-cards .card {
+    height: 180px;
+    margin-bottom: 14px;
+  }
+
+  /* response section */
+  .response {
+    padding: 10px 0 28px;
+  }
+  .response-desc {
+    padding-inline: 12px;
+    text-align: center;
+  }
+
+  .response-list {
+    gap: 0;
+    flex-direction: column;
+    line-height: 36px;
+    align-items: flex-start;
+  }
+
+  /* cta section */
+  .cta {
+    padding: 60px 20px 60px;
+    gap: 20px;
+  }
+
+  /* footer section */
+  .footer-section {
+    padding: 52px 20px;
+  }
+
+  .sub-footer {
+    flex-direction: column;
+  }
+
+  .sub-footer .text {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
 }
