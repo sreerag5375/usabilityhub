@@ -124,6 +124,10 @@ li {
   color: var(--accent-color);
 }
 
+.nav-menu {
+  display: none;
+}
+
 /* sign-up and sign-in buttons */
 .primary-btn {
   background-color: var(--accent-color);
@@ -175,7 +179,7 @@ li {
 }
 
 .header-section-right img {
-  width: 600px;
+  width: 100%;
 }
 
 /* header ends */
@@ -226,7 +230,7 @@ li {
   gap: 24px;
 }
 
-.features-section .secondary-btn{
+.features-section .secondary-btn {
   padding: 8px 20px;
   margin-bottom: 6px;
 }
@@ -354,6 +358,7 @@ li {
 
 .response h2 {
   color: white;
+  max-width: 300px;
 }
 
 .response h3 {
@@ -403,17 +408,20 @@ footer {
 
 .footer-section {
   align-items: flex-start;
-  justify-content: space-around;
-  padding: 100px 0 100px 0;
+  justify-content: space-between;
+  padding: 80px 20px 80px;
 }
 .footer-section .comapny-logo img {
-  max-width: 240px;
+  max-width: 160px;
 }
 
 .footer-section .link-column {
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 4px;
+}
+.footer-section .link-column h4 {
+  margin-bottom: 6px;
 }
 
 .footer-section a {
